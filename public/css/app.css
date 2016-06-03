@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "dolphins";
+  src: url("/fonts/dolphins.ttf") format("truetype"); }
+
+html body {
+  font: 98% dolphins, Helvetica, sans-serif;
+  color: #333; }
+
+/*# sourceMappingURL=app.css.map */

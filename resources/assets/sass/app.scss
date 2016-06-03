@@ -1,2 +1,41 @@
 // @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: ttf) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote("/"+$path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+@include font-face(dolphins, fonts/dolphins);
+
+
+$font-stack:    dolphins ,Helvetica, sans-serif;
+$primary-color: #333;
+
+html{
+	body {
+	  font: 98% $font-stack;
+	  color: $primary-color;
+	}	
+}
