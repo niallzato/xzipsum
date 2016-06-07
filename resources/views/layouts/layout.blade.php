@@ -45,20 +45,39 @@
             @yield('content')
         </div>
         <script type="text/javascript">
-            var para,capital,lower;
-            $( document ).ready(function() {
-                
-               //$( "#post" ).click(function() {
 
-               //    para = $( "#paragraphs" ).val();
-               //    
-               //    console.log('here');
-               //    
-               //    $.post( "/text", function( data ) {
-               //      $( ".result" ).html( data );
-               //    });
-               //});
+            $( document ).ready(function() {                
+               $( ".lowercase" ).click(function() {
+                    console.log('gff');
+                    if ($(this).find('i').hasClass('fade-in') == false) {
+                        $(this).find('i').addClass('fade-in');
+                        $('#lower').val('1');
+                        if ($('.capital i').hasClass('fade-in')) {
+                            $('.capital i').removeClass('fade-in');
+                            $('#capital').val('0');
+                        }
+                    }
+                    else{
+                        $(this).find('i').removeClass('fade-in');
+                        $('#lower').val('0');
+                    }
+               });
 
+               $( ".capital" ).click(function() {
+                    console.log('gff');
+                    if ($(this).find('i').hasClass('fade-in') == false) {
+                        $(this).find('i').addClass('fade-in');
+                        $('#capital').val('1');
+                        if ($('.lowercase i').hasClass('fade-in')) {
+                            $('.lowercase i').removeClass('fade-in');
+                            $('#lower').val('0');
+                        }
+                    }
+                    else{
+                        $('#capital').val('0');
+                        $(this).find('i').removeClass('fade-in');   
+                    }
+               });               
             });            
         </script>
     </body>

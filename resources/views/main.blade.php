@@ -8,10 +8,13 @@
 		<br>
 		<br>
 		<br>
+		@if(!isset($lorem))
 		Modifications
 		<div>
 			<form method="post" action="/text">
-			<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+				<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+				<input type="hidden" id="capital" name="capital" value="0">
+				<input type="hidden" id="lower" name="lower" value="0">
 				<div class="input">
 					<div class="input-text">Number of paragraps</div>
 					<input type="text" name="paragraphs" class="" value="1"> 
@@ -29,6 +32,9 @@
 				</button> 								 
 			</form>
 		</div>
+		@else
+			{!!$lorem!!}
+		@endif
 
 	</div>
 	<div class="col-xs-12 col-md-5">

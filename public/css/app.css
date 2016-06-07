@@ -5766,12 +5766,19 @@ html body {
     border: solid white 4px;
     font-size: 16px;
     border-radius: 3px;
+    cursor: pointer;
     line-height: 1;
     padding: 4px 2px;
-    background: rgba(192, 192, 192, 0.5); }
+    background: rgba(192, 192, 192, 0.5);
+    opacity: 1; }
   html body .checkbox-custom {
     padding: 5px 2px; }
     html body .checkbox-custom i {
-      opacity: 0; }
+      opacity: 0;
+      transition: opacity .25s ease-in-out;
+      -moz-transition: opacity .25s ease-in-out;
+      -webkit-transition: opacity .25s ease-in-out; }
+      html body .checkbox-custom i.fade-in {
+        opacity: 1; }
 
 /*# sourceMappingURL=app.css.map */
