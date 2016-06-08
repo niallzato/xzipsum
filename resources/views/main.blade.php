@@ -3,7 +3,8 @@
 
 @section('content')
 	<div class="row">
-	<div class="col-xs-12 col-md-7">
+	<div class="col-xs-12 ">
+		<br>
 		<span class="text-large">Yo dawg, I heard you you like text generators </span>
 		<br>
 		<br>
@@ -37,9 +38,7 @@
 		@endif
 
 	</div>
-	<div class="col-xs-12 col-md-5">
-		<div class="answer"></div>
-	</div>	
+
 		
 	</div>
     

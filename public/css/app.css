@@ -5738,10 +5738,10 @@ button.close {
   src: url("/fonts/dolphins.ttf") format("truetype"); }
 
 html body {
-  font: 18px dolphins, Helvetica, sans-serif;
+  font: 26px dolphins, Helvetica, sans-serif;
   color: #333; }
   html body .text-xlarge {
-    font-size: 4rem; }
+    font-size: 4.25rem; }
   html body .text-center {
     text-align: center; }
   html body .orange-background {
@@ -5756,15 +5756,14 @@ html body {
         padding: 3% 0; } }
   html body .input-text {
     display: inline-block;
-    margin: 10px 0;
-    width: 200px; }
+    margin: 20px 0;
+    width: 260px; }
   html body input[type="text"], html body .checkbox-custom {
     text-align: center;
     font-family: dolphins, Helvetica, sans-serif;
     width: 50px;
     display: inline-block;
     border: solid white 4px;
-    font-size: 16px;
     border-radius: 3px;
     cursor: pointer;
     line-height: 1;
@@ -5780,5 +5779,11 @@ html body {
       -webkit-transition: opacity .25s ease-in-out; }
       html body .checkbox-custom i.fade-in {
         opacity: 1; }
+  html body button {
+    background: orange;
+    color: purple;
+    box-shadow: 0;
+    outline: 0;
+    border: 0px; }
 
 /*# sourceMappingURL=app.css.map */
