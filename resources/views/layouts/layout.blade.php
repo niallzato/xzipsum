@@ -35,7 +35,7 @@
     </head>
     <body>
         <div class="container-fluid">
-            <div class="row orange-background">
+            <div class="row bkg-image">
                 <div class="col-xs-12">
                     <div class="text-center logo-text text-xlarge text-bold">
                         PIMP MY <br> TEXT

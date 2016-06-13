@@ -29,7 +29,7 @@
 
 @include font-face(dolphins, fonts/dolphins);
 
-
+$orange: #FEBF22;
 $font-stack:    dolphins ,Helvetica, sans-serif;
 $primary-color: #333;
 
@@ -37,6 +37,7 @@ html{
 	body {
 	  font: 26px $font-stack;
 	  color: $primary-color;
+	  text-align: center;
 
 	  .text-xlarge{
 	  	font-size:4.25rem;
@@ -52,6 +53,12 @@ html{
 
 	  .container-full{
 	  	min-height: 100vh;
+	  }
+
+	  .bkg-image{
+	  	background: url('/images/watmyride2.png');
+		background-size: contain;
+    	background-position: center;
 	  }
 
 	  .logo-text{
@@ -94,11 +101,17 @@ html{
 	  	}
 	  }
 	  button{
-	  	background:orange;
+	  	background:$orange;
 	  	color: purple;
 	  	box-shadow: 0;
 	  	outline:0;
-	  	border:0px;
+	  	padding:5px 6px;
+	  	border:solid 2px $orange;
+	  	border-radius: 3px;
+	  	margin: 0 0 10px 0; 
+	  }
+	  .lorem{
+	  	text-align: left;
 	  }
 
 

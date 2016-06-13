@@ -5739,7 +5739,8 @@ button.close {
 
 html body {
   font: 26px dolphins, Helvetica, sans-serif;
-  color: #333; }
+  color: #333;
+  text-align: center; }
   html body .text-xlarge {
     font-size: 4.25rem; }
   html body .text-center {
@@ -5748,6 +5749,10 @@ html body {
     background: orange; }
   html body .container-full {
     min-height: 100vh; }
+  html body .bkg-image {
+    background: url("/images/watmyride2.png");
+    background-size: contain;
+    background-position: center; }
   html body .logo-text {
     color: purple;
     padding: 30px 0; }
@@ -5780,10 +5785,15 @@ html body {
       html body .checkbox-custom i.fade-in {
         opacity: 1; }
   html body button {
-    background: orange;
+    background: #FEBF22;
     color: purple;
     box-shadow: 0;
     outline: 0;
-    border: 0px; }
+    padding: 5px 6px;
+    border: solid 2px #FEBF22;
+    border-radius: 3px;
+    margin: 0 0 10px 0; }
+  html body .lorem {
+    text-align: left; }
 
 /*# sourceMappingURL=app.css.map */
