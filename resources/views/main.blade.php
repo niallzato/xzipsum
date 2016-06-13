@@ -8,7 +8,6 @@
 		<span class="text-large">Yo dawg, I heard you you like text generators </span>
 		<br>
 		<br>
-		<br>
 		@if(!isset($lorem))
 		Modifications
 		<div>
