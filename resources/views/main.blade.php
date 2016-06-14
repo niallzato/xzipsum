@@ -11,8 +11,8 @@
 		@if(!isset($lorem))
 		Modifications
 		<div>
-			<form method="post" action="/text">
-				<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+			{!! \Form::open(array('url' => '/text', 'method' => 'posst')) !!}
+
 				<input type="hidden" id="capital" name="capital" value="0">
 				<input type="hidden" id="lower" name="lower" value="0">
 				<div class="input">
@@ -30,7 +30,8 @@
 				<button type="submit" id="post">
 					PIMP MY <br> TEXT
 				</button> 								 
-			</form>
+
+			{!! Form::close() !!}
 		</div>
 	</div>
 	@else

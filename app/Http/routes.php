@@ -17,9 +17,13 @@ Route::group(['middleware' => 'web'], function () {
 	});
 
 	Route::get('/main', function () {
-	    return view('main');
+		return view('main');
 	});
 
 	Route::post('/text', 'Controller@postForm');
+
+	//Route::post('/text', function () {
+	//	dd(\Request::all());
+	//});	
 
 });

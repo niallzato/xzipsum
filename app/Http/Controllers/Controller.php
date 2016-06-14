@@ -39,6 +39,8 @@ class Controller extends BaseController
 
         	$random = $this->getText($request['paragraphs'],$case);
 
+            //\Request::session()->put('text',$random);
+
         	return view('main', ['lorem' => $random]);
         }
 
